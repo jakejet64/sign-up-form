@@ -1,5 +1,53 @@
 :root {
     font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
     padding: 0 0;
     margin: 0 0;
+}
+
+body {
+    display: flex;
+    margin: inherit;
+}
+
+.image {
+    width: 40vw;
+    height: 100vh;
+    background-image: url("assets/ralph-ravi-kayden-XS1AqnlwwMA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.page {
+    width: 60vw;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: max(9vh, 80px);
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin-bottom: 72.5vh;
+}
+
+.brand {
+    filter:invert(100%);
+}
+
+.credit {
+    position: relative;
+    bottom: 1vh;
+    color: white;
+    background-color: black;
+    opacity: .7;
+    padding: 3px;
 }
