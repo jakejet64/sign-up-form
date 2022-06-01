@@ -3,11 +3,19 @@
     font-size: 12px;
     padding: 0 0;
     margin: 0 0;
+    --accent-color: rgb(197, 124, 82);
 }
+
 
 body {
     display: flex;
     margin: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 .image {
@@ -25,6 +33,11 @@ body {
 .page {
     width: 60vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 228, 228);
+    justify-content: center;
+
 }
 
 .logo {
@@ -50,4 +63,79 @@ body {
     background-color: black;
     opacity: .7;
     padding: 3px;
+}
+
+.tablediv {
+    margin: 15px 0px;
+    padding: 20px;
+    width: 60vw;
+    height: 190px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(104, 104, 104);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+table {
+    width: 30vw;
+}
+
+td {
+    padding: 7px;
+}
+
+label {
+    display: block;
+    font-size: .9rem;
+    margin-bottom: 1px;
+    color:rgb(30, 30, 30);
+}
+
+input {
+    width: min(250px, 20vw);
+}
+
+.letsdothis {
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+}
+
+.page p {
+    font-size: 1.9rem;
+    width: min(55vw, 650px);
+    margin: 10px 30px;
+}
+
+.page p:nth-child(2){
+    margin-bottom: 5vh;
+}
+
+.logIn {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+button {
+    margin: 10px 30px;
+    padding: 15px 40px;
+    border: none;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(104, 104, 104);
+    color:white;
+    text-shadow: 1px 1px 1px rgb(104, 104, 104);
+}
+
+input:hover {
+    transform: scale(1.02);
+}
+
+
+
+button:active {
+    transform: scale(1.05);
 }
